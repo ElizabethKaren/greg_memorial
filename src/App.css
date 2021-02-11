@@ -1,3 +1,10 @@
 .App {
   text-align: center;
+  font-family: 'Lobster', cursive;
+  color: #A46C43;
+  text-shadow: 2px 2px #DFB7CF;
+}
+
+h1:hover{
+  color: #766654;
 }
