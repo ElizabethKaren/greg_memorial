@@ -1,43 +1,48 @@
 import React, { useState } from 'react'
 import './App.css';
+import GregPic1 from "./images/IMG_5321.PNG"
+import GregPic2 from './images/IMG_5159.PNG'
+import GregPic3 from './images/IMG_5160.PNG'
+import GregPic4 from './images/IMG_5161.PNG'
+import GregPic5 from './images/IMG_5162.PNG'
+import GregPic6 from './images/IMG_5163.PNG'
+import GregPic7 from './images/IMG_5164.PNG'
+import GregPic8 from './images/IMG_5181.PNG'
+import GregPic9 from './images/IMG_5182.PNG'
+import GregPic10 from './images/IMG_5183.PNG'
 
 function App() {
   const [pic, setPic] = useState([
     {
-      image: './images/IMG_5159.PNG'
+      image: GregPic1
     },
     {
-      image: './images/IMG_5160.PNG'
+      image: GregPic2
     },
     {
-      image: './images/IMG_5161.PNG'
+      image: GregPic3
     },
     {
-      image: './images/IMG_5162.PNG'
+      image: GregPic4
     },
     {
-      image: './images/IMG_5163.PNG'
+      image: GregPic5
     },
     {
-      image: './images/IMG_5164.PNG'
+      image: GregPic6
     },
     {
-      image: './images/IMG_5181.PNG'
+      image: GregPic7
     },
     {
-      image: './images/IMG_5182.PNG'
-    },
-    {
-      image: './images/IMG_5183.PNG'
+      image: GregPic9
     }
   ])
 
-  console.log(pic)
   return (
     <div className="App">
       <h1>We Love Greg</h1>
-      <img src='./images/IMG_5321.PNG' alt='greg' />
-      { pic.map((greg, index) => <img src={greg.image} alt={index} /> )}
+      { pic.map((greg, index) => <div><br/><img src={greg.image} alt={index} width='350' height='530' /><br/></div> )}
     </div>
   );
 }
